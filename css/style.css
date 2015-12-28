@@ -1,0 +1,388 @@
+/* General */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -80px;
+  position: relative;
+}
+
+.container {
+  width: 960px;
+}
+
+/* Header */
+
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  
+  font-size: 17px;
+  padding: 15px;
+}
+
+
+/* Menu */ 
+
+.header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.menu > li {
+  display: inline;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu a {
+  color: #898989;
+  font-size: 15px;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+  font-size: 16px;
+  margin-top: 5px;
+  min-width: 105px;
+}
+
+.dropdown-menu li a {
+  color: #898989;
+  padding: 6px 20px;
+  font-weight: 300;
+}
+
+
+/* Carousel */
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-bottom: 1px solid #ddd;
+}
+
+.slide {
+  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
+  background-size: cover;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.active-slide {
+    display: block;
+}
+
+.slide-copy h1 {
+  color: #4C799E;  
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 40px;
+  margin-top: 50px;
+  margin-bottom: 0px;
+}
+
+.slide-copy p {
+  color: #7AA0C0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.slide-copy a {
+  text-decoration: underline;
+}
+
+.slide-img {
+  text-align: right;
+}
+
+/* Slide feature */
+
+.slide-feature {
+  text-align: center;
+  background-image: url('../img/jumbo.jpg');
+  height: 420px;
+}
+
+.slide-feature img {
+  margin-top: 112px;
+  margin-bottom: 28px;
+}
+
+.slide-feature p {
+  display: block;
+  color: white;
+  padding: 53px 0;
+  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  
+  font-size: 138px;
+}
+
+.slider-nav {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.arrow-prev {
+  margin-right: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.arrow-next {
+  margin-left: 45px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 9px;
+}
+
+.slider-dots {
+  list-style: none;
+  display: inline-block;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.slider-dots li {
+  color: #bbbcbc;
+  display: inline;
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.slider-dots li.active-dot {
+  color: #363636;
+}
+
+
+/* About */ /* Ministries */ /* Donations */
+.about {
+  padding: 40px 0;
+}
+
+.about a {
+  text-decoration: underline;
+}
+
+.topic {
+  padding: 10px 0 0 174px;
+  color: #075E4B;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.description {
+  padding: 0 174px;
+  color: #75BFAF;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.description img {
+  padding-top: 50px;
+}
+
+/* Staff */
+.description2 {
+  padding: 0 174px;
+  color: #75BFAF;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.1em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+.description2 th, td {
+  text-align:center;
+}
+
+.description2 img {
+  height: 160px;
+}
+
+.description2 p {
+  margin: 25px;
+}
+
+/* Donations */
+.visiting {
+  padding: 10px 0 0 174px;
+  color: #2B8A75;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin-top: 26px;
+  margin-bottom: 36px;
+}
+
+.Bibleverse {
+  padding: 0 174px;
+  color: #8BDD87;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 50px;
+}
+
+.contribute {
+  padding: 0 174px;
+  color: #8BDD87;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  margin-bottom: 15px;
+  margin-top: 16px;
+}
+
+/* Contact */
+form {
+  max-width: 600px;
+  margin: 45px auto;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  border-radius: 8px;
+}
+
+h1 {
+  margin: 10px 0;
+  color: #075E4B;  
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+legend {
+  color: #75BFAF;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15em;
+  line-height: 1.75em;
+  padding-bottom: 20px;
+}
+
+label {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #075E4B;  
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+textarea {
+  height: 300px;
+}
+
+button {
+  padding: 19px 39px 18px 39px;
+  color: #8BDD87;
+  background-color: #0E7709;
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+
+/* Footer */
+
+.footer {
+  height: 90px;
+  position: relative;
+  background-color: #343434;
+  color: #fff;
+  padding: 20px 0 20px 0;
+  margin: 100px 0px 0px -84px;
+  clear: both;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer li {
+  display: inline;
+  padding: 0 30px 0 0;
+  font-size: 11px;
+}
+
+
+.footer p {
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  padding: 15px 0 0 0;
+}
+
+/* App links */
+
+.get-app {
+  list-style: none;
+  padding-bottom: 9px;
+  padding-left: 0px;
+  padding-top: 9px;
+}
+
+.get-app li {
+  float: left;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
+.get-app img {
+  height: 40px;
+}
+
