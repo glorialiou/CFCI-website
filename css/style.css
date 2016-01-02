@@ -30,7 +30,6 @@ html, body {
 
 
 /* Menu */ 
-
 .header .menu {
   float: right;
   list-style: none;
@@ -73,7 +72,6 @@ html, body {
 }
 
 .slide {
-  background: transparent url('http://s3.amazonaws.com/codecademy-content/courses/ltp2/img/flipboard/feature-gradient-transparent.png') center center no-repeat;
   background-size: cover;
   display: none;
   position: absolute;
@@ -84,7 +82,7 @@ html, body {
 }
 
 .active-slide {
-    display: block;
+  display: block;
 }
 
 .slide-copy h1 {
@@ -187,14 +185,14 @@ html, body {
 }
 
 .topic {
-  padding: 10px 0 0 174px;
+  padding: 10px 175px 0 175px;
   color: #075E4B;  
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
 }
 
 .description {
-  padding: 0 174px;
+  padding: 0 175px;
   color: #75BFAF;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.15em;
@@ -205,11 +203,14 @@ html, body {
 
 .description img {
   padding-top: 50px;
+  padding-right: 15px;
+  width: 245px;
+  height: 192px;
 }
 
 /* Staff */
 .description2 {
-  padding: 0 174px;
+  padding: 0 175px;
   color: #75BFAF;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.1em;
@@ -219,20 +220,17 @@ html, body {
 }
 
 .description2 th, td {
-  text-align:center;
+  text-align: center;
 }
 
 .description2 img {
   height: 160px;
-}
-
-.description2 p {
-  margin: 25px;
+  margin: 5px 50px 10px 50px;
 }
 
 /* Donations */
 .visiting {
-  padding: 10px 0 0 174px;
+  padding: 10px 175px 0 175px;
   color: #2B8A75;  
   font-family: 'Oswald', sans-serif;
   font-weight: 400;
@@ -241,7 +239,7 @@ html, body {
 }
 
 .Bibleverse {
-  padding: 0 174px;
+  padding: 0 175px;
   color: #8BDD87;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.15em;
@@ -251,7 +249,7 @@ html, body {
 }
 
 .contribute {
-  padding: 0 174px;
+  padding: 0 175px;
   color: #8BDD87;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 1.15em;
@@ -384,5 +382,103 @@ fieldset {
 
 .get-app img {
   height: 40px;
+}
+
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1200px) { 
+  .topic, .description, .description2, .visiting, .Bibleverse, .contribute {
+    padding-left: 125px;
+    padding-right: 125px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media screen and (max-width: 992px) {
+  .header .menu {
+    padding-right: 80px;
+  }
+
+  .menu > li {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .topic, .description, .description2, .visiting, .Bibleverse, .contribute {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .description img {
+    width: 430px;
+    height: 320px;
+  }
+
+  .footer {
+    height: 110px;
+    margin-left: 0px;
+  }
+
+  .footer li {
+    display: list-item;
+  }
+}
+
+/* Small Devices, Tablets */
+@media screen and (max-width: 768px) {
+  .container img {
+    display: none;
+  }
+
+  .header .menu {
+    float: none;
+  }
+
+  .menu > li {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .slide-copy {
+    padding-left: 90px;
+  }
+
+  .slider-nav {
+    display: none;
+  }
+
+  .topic, .description, .description2, .visiting, .Bibleverse, .contribute {
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .description img {
+    width: 380px;
+    height: 300px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media screen and (max-width: 480px) {
+  .menu > li {
+    display: list-item;
+  }
+
+  .topic, .description, .description2, .visiting, .Bibleverse, .contribute {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .description img {
+    width: 260px;
+    height: 205px;
+  }
+}
+
+/* Custom, iPhone Retina */ 
+@media screen and (max-width: 320px) { 
+  .topic, .description, .description2, .visiting, .Bibleverse, .contribute {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 

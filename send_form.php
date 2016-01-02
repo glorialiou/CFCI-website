@@ -1,5 +1,5 @@
 <?php 
-if(isset($_POST['email'])){
+if(isset($_POST['submit'])){
     $to = "info@cpcicostarica.com"; // CFCI's e-mail
     $from = $_POST['email']; // sender's e-mail
     $name = $_POST['name'];
