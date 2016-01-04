@@ -395,7 +395,7 @@ fieldset {
 /* Medium Devices, Desktops */
 @media screen and (max-width: 992px) {
   .header .menu {
-    padding-right: 80px;
+    padding-right: 82px;
   }
 
   .menu > li {
@@ -430,7 +430,7 @@ fieldset {
   }
 
   .header .menu {
-    float: none;
+    padding-right: 580px;
   }
 
   .menu > li {
